@@ -14,11 +14,16 @@ export default function Home() {
 			console.error("Error in triggerQuestion:", error);
 		}
 	}
-  
 	return (
-		<main>
+		<main className="grid place-content-center p-4 gap-4">
 			<h1>Powering Futures AI</h1>
-			<button type="button" onClick={() => triggerQuestion()}>Ask questions</button>
+			<button
+				className="px-4 py-2 bg-green-900 text-slate-50 rounded-md"
+				type="button"
+				onClick={() => triggerQuestion()}
+			>
+				Ask questions
+			</button>
 		</main>
 	);
 }
